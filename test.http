@@ -1,0 +1,29 @@
+## Get all posts 
+GET http://localhost:8080/api/posts
+
+### Get the first post by Id
+GET http://localhost:8080/api/posts?id=1
+
+### Get the second post by Id
+GET http://localhost:3000/api/posts?id=2
+
+### Get the third post by Id
+GET http://localhost:3000/api/posts?id=3
+
+### Create new post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "description": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+### Delete post by Id
+DELETE  http://localhost:8080/api/posts?id=1
+
+### Update post by Id
+PATCH http://localhost:3000/api/posts/1
+
+
+
